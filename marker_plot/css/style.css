@@ -1,0 +1,56 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  /*background-image: url('../giftly.png');*/
+  background-color: #3c4350;
+  overflow:auto;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#map, #side_bar {
+  height: 100%;
+}
+
+
+#side_bar textarea {
+  height: calc(100% - 34px);
+  width: 100%;
+  background-color: #3F4852;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #494040;
+  border-radius: 0px;
+}
+
+#side_bar button {
+  border-radius: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.resend-group {
+  margin-top: 10px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  margin:0 auto;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}

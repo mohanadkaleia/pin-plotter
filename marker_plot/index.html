@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<title>Marker Ploter</title>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="row main">
+        <div id="side_bar" class="col-md-3 padding-0">
+            <textarea id="locations" class="form-control" placeholder="Latitude, Longitude">36.10065, -95.92576</textarea>
+
+            <button type="button" name="plot" id="plot" class="btn btn-info">PIN on Map</button>
+            <button type="button" name="reset" id="reset" class="btn btn-warning">Clear</button>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target=".bs-example-modal-sm">Help</button>
+        </div>
+
+        <div id="map" class="col-md-9 padding-0">
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade bs-example-modal-sm" id="myModal" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Pin Plotter : Help</h4>
+          </div>
+          <div class="modal-body">
+            <p>Pin Plotter, an easy tool to plot markers on Google maps based on latitude and longitude. Each pin gets a sequence number as you enter it in the text box, the first line gets number 1 and so on.</p>
+
+            <p>Developed by: Mohanad Shab Kaleia</p>
+            <p>Email: ms.kaleia@gmail.com</p>
+            <p>LinkedIn:<a href="https://www.linkedin.com/in/mohanad-kaleia-077a8368/" target="_blank">Mohanad Kaleia</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY6ogtcPgAc_ZoPydjIE0EGpZiYzuqoyc&callback=initMap"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+</html>
